@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Bakery - Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Logo.jpg" alt="Dennis Logo" class="img-fluid" width="80" height="80">
+                    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="products py-5">
+            <div class="container">
+                <h1 class="text-center mb-4">Our Products</h1>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/chocolate cake-service.jpg" class="card-img-top" alt="Chocolate Cake">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Cake</h5>
+                                <p class="card-text">Rich chocolate cake with creamy frosting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/Butter-Croissants-service.jpg" class="card-img-top" alt="Croissant">
+                            <div class="card-body">
+                                <h5 class="card-title">Butter Croissant</h5>
+                                <p class="card-text">Flaky, buttery croissant baked fresh daily.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/Oatmeal-Cookies-services.jpg" class="card-img-top" alt="Oatmeal Cookie">
+                            <div class="card-body">
+                                <h5 class="card-title">Oatmeal Cookie</h5>
+                                <p class="card-text">Chewy cookie with a hint of cinnamon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/doughnuts-service.jpg" class="card-img-top" alt="Doughnuts">
+                            <div class="card-body">
+                                <h5 class="card-title">Doughnuts</h5>
+                                <p class="card-text">Indulge in the perfect bite of happiness! Our freshly baked doughnuts are soft, fluffy,and irresistibly delicious</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/muffins-service.jpg" class="card-img-top" alt="Muffins">
+                            <div class="card-body">
+                                <h5 class="card-title">Muffins</h5>
+                                <p class="card-text">Start your day with a burst of flavor! Our muffins are moist, fluffy, and packed with delicious ingredients, from rich chocolate chips to fresh berries..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/Pies-service.jpg" class="card-img-top" alt="Pies">
+                            <div class="card-body">
+                                <h5 class="card-title">Pies</h5>
+                                <p class="card-text">Savor the taste of homemade goodness! Our pies feature a golden, flaky crust filled with rich, flavorful fillings like sweet fruits and creamy custards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat Button -->
+<button class="btn btn-secondary chat-button" data-bs-toggle="modal" data-bs-target="#chatbotModal">Chat with us</button>
+
+<!-- Chatbot Modal -->
+<div class="modal fade" id="chatbotModal" tabindex="-1" aria-labelledby="chatbotModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chatbotModalLabel">Chat with us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="conversation" style="height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;"></div>
+                <div class="input-group mt-3">
+                    <input type="text" id="userInput" class="form-control" placeholder="Type your message...">
+                    <button class="btn btn-primary" id="sendButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Dennis Bakery. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFDD0; /* Light cream background */
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513; /* Warm brown */
+}
+
+.navbar-brand, .nav-link {
+    color: #8B4513;
+}
+
+.btn-primary {
+    background-color: #FFC0CB; /* Soft pink */
+    border-color: #FFC0CB;
+    color: #8B4513;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    background-color: #FFB6C1;
+    border-color: #FFB6C1;
+}
+
+.nav-link:hover {
+    background-color: lightblue;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    transform: translateY(-5px);
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
